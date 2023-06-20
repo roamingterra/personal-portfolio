@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Gordita-Regular";
+  src: url(./fonts/gordita-cufonfonts-webfont/Gordita\ Regular.woff);
+}
+
+@font-face {
+  font-family: "Gordita-Medium";
+  src: url(./fonts/gordita-cufonfonts-webfont/Gordita\ Medium.woff);
+}
+
+@font-face {
+  font-family: "Gordita-Bold";
+  src: url(./fonts/gordita-cufonfonts-webfont/Gordita\ Bold.woff);
+}
+
+:root {
+  --darker-theme-color: #2c0e76;
+  --dark-theme-color: #4a148c;
+  --contrast-theme-color: #e91e63;
+  --font-color: white;
+}
+
+html,
+body {
+  font-family: "Gordita-Regular";
+  background-color: var(--darker-theme-color);
+  margin: 0;
+}
+
+/* navigation bar */
+nav {
+  box-sizing: border-box;
+  padding: 30px 40px;
+  position: fixed;
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: var(--font-color);
+}
+
+nav > ul > li:first-child {
+  margin-right: auto;
+  white-space: nowrap;
+  font-family: "Gordita-medium";
+}
+
+nav > ul > li:not(:first-child) {
+  transition-property: color;
+  transition-duration: 0.75s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+nav > ul > li:not(:first-child):hover {
+  color: var(--contrast-theme-color);
+}
+
+/* header section */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Gordita-Bold";
+  min-height: 100vh;
+}
+
+header > h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}
+
+.my-name,
+.web-development {
+  color: var(--contrast-theme-color);
+}
+
+.scroll-down {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.scroll-down > svg {
+  fill: var(--contrast-theme-color);
+  animation-duration: 1s;
+  animation-name: change-color;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change-color {
+  from {
+    fill: var(--contrast-theme-color);
+  }
+
+  to {
+    fill: transparent;
+  }
+}
+
+/* media queries */
+@media screen and (max-width: 2560px) {
+  nav {
+    font-size: 25px;
+  }
+  header {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  nav {
+    font-size: 20px;
+  }
+
+  header {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    font-size: 20px;
+  }
+  header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  nav > ul {
+    justify-content: space-between;
+    gap: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+  }
+
+  nav > ul > li:first-child {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  header > h1 {
+    padding: 20px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  nav {
+    font-size: 16px;
+  }
+  header > h1 {
+    padding: 20px;
+    font-size: 21px;
+    gap: 20px;
+  }
+
+  .scroll-down {
+    padding-top: 40px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  header > h1 > span:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav {
+    font-size: 14px;
+  }
+}
