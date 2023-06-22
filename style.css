@@ -65,7 +65,30 @@ nav > ul > li:not(:first-child):hover {
 }
 
 /* header section */
-header {
+.video-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.header-content {
+  z-index: 1;
+}
+
+header > .header-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +98,7 @@ header {
   min-height: 100vh;
 }
 
-header > h1 {
+.header-content > h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -120,7 +143,7 @@ header > h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--dark-theme-color);
+  background-color: var(--darker-theme-color);
   padding: 10px 10px 10px 10px;
   min-height: 100vh;
 }
@@ -184,6 +207,141 @@ header > h1 {
 .skill-container > h3 {
   margin: 0;
   color: white;
+}
+
+/* projects section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-theme-color);
+  padding: 98.5px 10px;
+}
+
+.projects > h1 {
+  font-size: 40px;
+  margin: 0;
+  font-family: "Gordita-Bold";
+  color: var(--contrast-theme-color);
+}
+
+.projects-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  row-gap: 150px;
+  column-gap: 50px;
+  margin-top: 63.2px;
+  width: 100%;
+}
+
+.project-explanation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  padding: 0 25px;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  max-width: 450px;
+  gap: 20px;
+}
+
+.button-container > a {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.live-preview,
+.view-code {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 0;
+  font-family: "Gordita-Medium";
+  font-size: 16px;
+  background-color: var(--font-color);
+  color: var(--contrast-theme-color);
+  cursor: pointer;
+  transition: background-color 0.75s ease-in-out, color 0.75s ease-in-out;
+}
+
+.live-preview:hover,
+.view-code:hover {
+  background-color: var(--contrast-theme-color);
+  color: var(--font-color);
+}
+
+.project-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.project-name {
+  color: var(--contrast-theme-color);
+  margin: 0 0 20px 0;
+  font-family: "Gordita-Medium";
+}
+
+.project-description {
+  color: var(--font-color);
+  max-width: 450px;
+  margin: 26px 0;
+}
+
+.project-description > span {
+  color: var(--contrast-theme-color);
+}
+
+.project-image-section > div {
+  width: 100%;
+  max-width: 550px;
+  min-width: 430px;
+  height: 100%;
+  margin: 0 25px;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.75s ease-in-out;
+}
+
+.project-image-section.project-1 > div {
+  background-image: url(./images/shopping-cart.gif);
+}
+
+.project-image-section.project-1 > div:hover {
+  background-image: url(./images/shopping-cart.png);
+}
+
+.project-image-section.project-2 > div {
+  background-image: url(./images/weather-app.gif);
+}
+
+.project-image-section.project-2 > div:hover {
+  background-image: url(./images/weather-app.png);
+}
+
+.project-image-section.project-3 > div {
+  background-image: url(./images/battleship.gif);
+}
+
+.project-image-section.project-3 > div:hover {
+  background-image: url(./images/battleship.png);
+}
+
+.project-image-section.project-4 > div {
+  background-image: url(./images/todo-list.gif);
+}
+
+.project-image-section.project-4 > div:hover {
+  background-image: url(./images/todo-list.png);
 }
 
 /* contact section */
@@ -303,8 +461,6 @@ header > h1 {
   .developer-description {
     font-size: 16px;
     max-width: 500px;
-    /* margin-left: 50px;
-    margin-right: 50px; */
   }
 
   .skills {

@@ -21,20 +21,37 @@
       </ul>
     </nav>
     <header>
-      <h1>
-        <span>My name is <span class="my-name">Daniel Ballerini.</span></span>
-        <span
-          >Welcome to my
-          <span class="web-development">web development</span> portfolio.</span
+      <div class="video-container">
+        <video
+          autoplay
+          muted
+          loop
+          id="background-video"
+          title="Video by Pressmaster: https://www.pexels.com/video/plexus-of-abstract-neon-geometrical-lines-with-moving-triangles-and-dots-3129595/"
         >
-      </h1>
-      <button class="scroll-down">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"
+          <source
+            src="./images/dynamic-purple-digital-background.mp4"
+            type="video/mp4"
           />
-        </svg>
-      </button>
+        </video>
+      </div>
+      <div class="header-content">
+        <h1>
+          <span>My name is <span class="my-name">Daniel Ballerini.</span></span>
+          <span
+            >Welcome to my
+            <span class="web-development">web development</span>
+            portfolio.</span
+          >
+        </h1>
+        <button class="scroll-down">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"
+            />
+          </svg>
+        </button>
+      </div>
     </header>
     <section class="about">
       <h1>About</h1>
@@ -114,6 +131,120 @@
         </div>
       </div>
     </section>
+    <section class="projects">
+      <h1>Noteworthy Projects</h1>
+      <div class="projects-container">
+        <div class="project-explanation-section project-1">
+          <h2 class="project-name">Shopping Cart</h2>
+          <p class="project-description">
+            Small <span>e-commerce</span>, single-page web application built
+            with <span>React</span>. This website includes a
+            <span>home page</span>, and a <span>shopping page</span> with an
+            <span>interactive side bar</span> shopping cart. It maintains a
+            <span>Responsive design</span> that is viewable
+            <span>across all devices</span>
+          </p>
+          <div class="button-container">
+            <a href="https://roamingterra.github.io/shopping-cart/">
+              <button
+                class="live-preview"
+                onclick="location.href"
+                type="button"
+              >
+                Live Preview
+              </button>
+            </a>
+            <a href="https://github.com/roamingterra/shopping-cart"
+              ><button class="view-code">View Code</button></a
+            >
+          </div>
+        </div>
+        <a
+          class="project-image-section project-1"
+          href="https://roamingterra.github.io/shopping-cart/"
+        >
+          <div title="Shopping Cart App Visual Representation"></div>
+        </a>
+        <a
+          class="project-image-section project-2"
+          href="https://roamingterra.github.io/weather-app/"
+        >
+          <div title="Weather App Visual Representation"></div>
+        </a>
+        <div class="project-explanation-section project-2">
+          <h2 class="project-name">Weather App</h2>
+          <p class="project-description">
+            JavaScript web application built using a <span>weather API</span>,
+            that displays <span>today's weather</span>, weather
+            <span>forecasts</span> for the next 21 hours, etc. Includes
+            <span>dynamic backgrounds</span> that change based on the current
+            weather, and a <span>search bar</span>, giving the user access to
+            the
+            <span> world's weather </span>
+          </p>
+          <div class="button-container">
+            <a href="https://roamingterra.github.io/weather-app/"
+              ><button class="live-preview">Live Preview</button></a
+            >
+            <a href="https://github.com/roamingterra/weather-app"
+              ><button class="view-code">View Code</button></a
+            >
+          </div>
+        </div>
+        <div class="project-explanation-section project-3">
+          <h2 class="project-name">Battleship</h2>
+          <p class="project-description">
+            JavaScript web application built using
+            <span>test driven development</span> with <span>Jest</span>. A
+            <span>human player</span> faces off against a simple
+            <span>AI player</span> in a game of battleship. The AI possesses the
+            <span>ability to discern its own successful hits</span>, and
+            attempts to <span> strike the remaining segments </span> of the
+            ship.
+          </p>
+          <div class="button-container">
+            <a href="https://roamingterra.github.io/battleship/"
+              ><button class="live-preview">Live Preview</button></a
+            >
+            <a href="https://github.com/roamingterra/battleship"
+              ><button class="view-code">View Code</button></a
+            >
+          </div>
+        </div>
+        <a
+          class="project-image-section project-3"
+          href="https://roamingterra.github.io/battleship/"
+        >
+          <div title="Battleship App Visual Representation"></div>
+        </a>
+        <a
+          class="project-image-section project-4"
+          href="https://roamingterra.github.io/todo-list/"
+        >
+          <div title="Todo List App Visual Representation"></div>
+        </a>
+        <div class="project-explanation-section project-4">
+          <h2 class="project-name">Todo List</h2>
+          <p class="project-description">
+            JavaScript web application that allows a user to
+            <span>plan ahead</span>. The user can
+            <span>add task categories</span>, and <span>add tasks</span> that
+            include the task <span>name</span>, task <span>category</span>,
+            <span>due date</span>, <span>priority</span> and
+            <span>description</span>. Includes a
+            <span>sleek interface</span> with <spn>toggling side bar</spn>.
+          </p>
+          <div class="button-container">
+            <a href="https://roamingterra.github.io/todo-list/"
+              ><button class="live-preview">Live Preview</button></a
+            >
+            <a href="https://github.com/roamingterra/todo-list"
+              ><button class="view-code">View Code</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- <section class="contact">
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -122,5 +253,6 @@
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
       />
     </section> -->
+    <!-- <footer></footer> -->
   </body>
 </html>
