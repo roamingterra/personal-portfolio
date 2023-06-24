@@ -15,7 +15,6 @@
 
 :root {
   --darker-theme-color: black; /* #2c0e76 */
-  --dark-theme-color: #4a148c; /* Not in use now */
   --contrast-theme-color: #e91e63;
   --font-color: white;
 }
@@ -34,7 +33,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.7); /* rgba(74, 20, 140, 0.7) */
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav > ul {
@@ -262,7 +261,6 @@ header > .header-content {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  text-align: justify;
   padding: 0 25px;
 }
 
@@ -436,8 +434,9 @@ header > .header-content {
 
 .contact-content > p {
   color: var(--font-color);
-  font-size: 20px;
+  font-size: 24px;
   max-width: 800px;
+  line-height: 175%;
 }
 
 .contact-content > p > span {
@@ -486,7 +485,7 @@ footer {
   color: var(--font-color);
   border-top: solid var(--border-color) 0.1px;
   padding: 25px 36px;
-  font-size: 16px;
+  /* font-size: 16px; */
   text-align: center;
 }
 
@@ -494,6 +493,10 @@ footer {
 @media screen and (min-height: 1250px) {
   /* about section */
   .about > .content > .developer-description {
+    font-size: 24px;
+  }
+
+  .contact > .contact-content > p {
     font-size: 24px;
   }
 }
@@ -547,12 +550,52 @@ footer {
   }
 
   .developer-description {
-    font-size: 20px;
+    font-size: 24px;
     max-width: 800px;
   }
 
   .skills {
     min-width: 800px;
+  }
+
+  /* contact section */
+  .contact-content > p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* about */
+  .about > h1 {
+    font-size: 48px;
+  }
+
+  .about > .content > .developer-description {
+    font-size: 36px;
+    max-width: 1000px;
+  }
+
+  .skills > h2 {
+    font-size: 42px;
+  }
+
+  .skills-container {
+    width: 1000px;
+  }
+
+  /* contact */
+  .contact-content > h1 {
+    font-size: 48px;
+  }
+
+  .contact > .contact-content > p {
+    width: 1000px;
+    font-size: 36px;
+  }
+
+  /* footer */
+  footer {
+    font-size: 20px;
   }
 }
 
@@ -590,6 +633,7 @@ footer {
   /* contact section */
   .contact-content > p {
     max-width: 600px;
+    font-size: 16px;
   }
 }
 
@@ -605,7 +649,6 @@ footer {
   }
 
   .developer-description {
-    font-size: 16px;
     max-width: 500px;
   }
 
@@ -659,7 +702,6 @@ footer {
   }
 
   .developer-description {
-    font-size: 14px;
     max-width: 350px;
   }
 
@@ -676,6 +718,11 @@ footer {
   .skill-container > img {
     width: 40px;
     margin-bottom: 20px;
+  }
+
+  /* contact section */
+  .contact-content > p {
+    max-width: 350px;
   }
 }
 
@@ -702,6 +749,7 @@ footer {
     margin-left: 40px;
     margin-right: 40px;
   }
+
   .skills {
     margin-bottom: 30px;
   }
@@ -716,7 +764,8 @@ footer {
 
   /* contact section */
   .contact-content > p {
-    max-width: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .contact-info-container {
