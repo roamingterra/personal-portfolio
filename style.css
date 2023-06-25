@@ -15,7 +15,7 @@
 
 :root {
   --darker-theme-color: black; /* #2c0e76 */
-  --contrast-theme-color: #e91e63;
+  --contrast-theme-color: #e91e96; /* #e91e63 */
   --font-color: white;
 }
 
@@ -51,6 +51,7 @@ nav > ul > li:first-child {
   white-space: nowrap;
   font-family: "Gordita-medium";
   color: var(--contrast-theme-color);
+  cursor: pointer;
 }
 
 nav > ul > li:not(:first-child) {
@@ -530,43 +531,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1440px) {
-  /* navigation bar */
-  nav {
-    font-size: 20px;
-  }
-
-  /* header section */
-  header {
-    font-size: 25px;
-  }
-
-  /* about section */
-  .about > h1 {
-    font-size: 40px;
-  }
-
-  .developer-description {
-    font-size: 24px;
-    max-width: 800px;
-  }
-
-  .skills {
-    min-width: 800px;
-  }
-
-  /* projects section */
-  .project-description {
-    max-width: 450px;
-  }
-
-  /* contact section */
-  .contact-content > p {
-    font-size: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2160px) {
   /* about */
   .about > h1 {
     font-size: 48px;
@@ -616,6 +581,42 @@ footer {
   /* footer */
   footer {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /* navigation bar */
+  nav {
+    font-size: 20px;
+  }
+
+  /* header section */
+  header {
+    font-size: 25px;
+  }
+
+  /* about section */
+  .about > h1 {
+    font-size: 40px;
+  }
+
+  .developer-description {
+    font-size: 24px;
+    max-width: 800px;
+  }
+
+  .skills {
+    min-width: 800px;
+  }
+
+  /* projects section */
+  .project-description {
+    max-width: 450px;
+  }
+
+  /* contact section */
+  .contact-content > p {
+    font-size: 24px;
   }
 }
 

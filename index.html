@@ -9,15 +9,16 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
     <title>Website Portfolio</title>
   </head>
   <body>
     <nav>
       <ul>
-        <li>Daniel Ballerini</li>
-        <li><a>About</a></li>
-        <li><a>Projects</a></li>
-        <li><a>Contact</a></li>
+        <li onclick="scrollToHeader()">Daniel Ballerini</li>
+        <li onclick="scrollToAbout()"><a>About</a></li>
+        <li onclick="scrollToProjects()"><a>Projects</a></li>
+        <li onclick="scrollToContact()"><a>Contact</a></li>
       </ul>
     </nav>
     <header>
@@ -44,7 +45,7 @@
             portfolio.</span
           >
         </h1>
-        <button class="scroll-down">
+        <button class="scroll-down" onclick="scrollToAbout()">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
               d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"
