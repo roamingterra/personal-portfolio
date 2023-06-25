@@ -236,7 +236,7 @@ header > .header-content {
   flex-direction: column;
   align-items: center;
   background-color: var(--darker-theme-color);
-  padding: 98.5px 10px;
+  padding: 98.5px 20px;
 }
 
 .projects > h1 {
@@ -244,6 +244,7 @@ header > .header-content {
   margin: 0;
   font-family: "Gordita-Bold";
   color: var(--contrast-theme-color);
+  text-align: center;
 }
 
 .projects-container {
@@ -300,7 +301,6 @@ header > .header-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
 }
 
 .project-name {
@@ -311,7 +311,6 @@ header > .header-content {
 
 .project-description {
   color: var(--font-color);
-  max-width: 450px;
   margin: 26px 0;
 }
 
@@ -332,18 +331,16 @@ header > .header-content {
 
 .project-image-section > div {
   width: 100%;
-  max-width: 550px;
-  min-width: 430px;
-  height: 100%;
+  padding-bottom: 45%; /* Adjust the padding-bottom value to maintain the desired aspect ratio */
   margin: 0 25px;
-  cursor: pointer;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: background-image 0.75s ease-in-out;
   border-bottom: solid white;
   border-width: 3px;
   border-color: var(--font-color);
+  background-position: center;
+  background-size: 100% 100%;
+  cursor: pointer;
+
+  transition: background-image 0.75s ease-in-out;
 
   animation-name: materialize;
   animation-duration: 1s;
@@ -558,6 +555,11 @@ footer {
     min-width: 800px;
   }
 
+  /* projects section */
+  .project-description {
+    max-width: 450px;
+  }
+
   /* contact section */
   .contact-content > p {
     font-size: 24px;
@@ -581,6 +583,24 @@ footer {
 
   .skills-container {
     width: 1000px;
+  }
+
+  /* projects section */
+  .projects > h1 {
+    font-size: 48px;
+  }
+
+  .project-name {
+    font-size: 32px;
+  }
+
+  .project-description {
+    max-width: 700px;
+    font-size: 28px;
+  }
+
+  .button-container > a > button {
+    font-size: 20px;
   }
 
   /* contact */
@@ -628,6 +648,50 @@ footer {
   .skill-container > img {
     width: 50px;
     margin-bottom: 20px;
+  }
+
+  /* projects section */
+  .projects-container {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .projects-container > .project-image-section > div {
+    padding: 0;
+    width: 450px;
+    height: 225px;
+  }
+
+  .projects-container > .project-explanation-section.project-1 {
+    order: 1;
+  }
+
+  .projects-container > .project-image-section.project-1 {
+    order: 2;
+  }
+
+  .projects-container > .project-explanation-section.project-2 {
+    order: 3;
+  }
+
+  .projects-container > .project-image-section.project-2 {
+    order: 4;
+  }
+
+  .projects-container > .project-explanation-section.project-3 {
+    order: 5;
+  }
+
+  .projects-container > .project-image-section.project-3 {
+    order: 6;
+  }
+
+  .projects-container > .project-explanation-section.project-4 {
+    order: 7;
+  }
+
+  .projects-container > .project-image-section.project-4 {
+    order: 8;
   }
 
   /* contact section */
@@ -720,6 +784,17 @@ footer {
     margin-bottom: 20px;
   }
 
+  /* projects section */
+  .project-explanation-section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .projects-container > .project-image-section > div {
+    width: 350px;
+    height: 175px;
+  }
+
   /* contact section */
   .contact-content > p {
     max-width: 350px;
@@ -762,6 +837,12 @@ footer {
     width: 50px;
   }
 
+  /* projects section */
+  .projects-container > .project-image-section > div {
+    width: 300px;
+    height: 150px;
+  }
+
   /* contact section */
   .contact-content > p {
     margin-left: 40px;
@@ -793,11 +874,23 @@ footer {
   .skills {
     min-width: 0;
   }
+
+  /* projects section */
+  .projects-container > .project-image-section > div {
+    width: 280px;
+    height: 140px;
+  }
 }
 
 @media screen and (max-width: 320px) {
   /* navigation bar */
   nav {
     font-size: 14px;
+  }
+
+  /* projects section */
+  .projects-container > .project-image-section > div {
+    width: 260px;
+    height: 130px;
   }
 }
