@@ -14,8 +14,8 @@
 }
 
 :root {
-  --darker-theme-color: black; /* #2c0e76 */
-  --contrast-theme-color: #e91e96; /* #e91e63 */
+  --darker-theme-color: black;
+  --contrast-theme-color: #e91e96;
   --font-color: white;
 }
 
