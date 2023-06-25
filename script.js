@@ -17,14 +17,3 @@ function scrollToContact() {
   const contactSection = document.querySelector(".contact");
   contactSection.scrollIntoView({ behavior: "smooth" });
 }
-
-// const header = document.querySelector("header");
-
-// window.addEventListener("scroll", () => {
-//   console.log(window.scrollY);
-//   if (window.scrollY === 1) {
-//     console.log("works");
-//     console.log(window.scrollY);
-//     scrollToAbout();
-//   }
-// });
