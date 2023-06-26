@@ -837,6 +837,11 @@ footer {
     height: 150px;
   }
 
+  .live-preview,
+  .view-code {
+    font-size: 14px;
+  }
+
   /* contact section */
   .contact-content > p {
     margin-left: 40px;
@@ -874,6 +879,11 @@ footer {
     width: 280px;
     height: 140px;
   }
+
+  .live-preview,
+  .view-code {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -886,5 +896,10 @@ footer {
   .projects-container > .project-image-section > div {
     width: 260px;
     height: 130px;
+  }
+
+  .live-preview,
+  .view-code {
+    padding: 10px 5px;
   }
 }
