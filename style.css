@@ -27,6 +27,18 @@ body {
 }
 
 /* navigation bar */
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.75s;
+  transition-timing-function: ease-in-out;
+}
+
+a:hover {
+  color: var(--contrast-theme-color);
+}
+
 nav {
   box-sizing: border-box;
   padding: 15px 40px;
@@ -55,6 +67,7 @@ nav > ul > li:first-child {
 }
 
 nav > ul > li:not(:first-child) {
+  color: var(--font-color);
   transition-property: color;
   transition-duration: 0.75s;
   transition-timing-function: ease-in-out;
