@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Website portfolio showcasing my skills and projects. Designed to be responsive across all devices, and with accessibility in mind",
   "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "jekyll": "^3.0.0-beta1"
   }
 }
